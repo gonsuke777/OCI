@@ -11,7 +11,7 @@
 # $2 ... Compartment OCID
 # $3 ... Tenancy Name
 #
-# Example: ./OCILimitsAndUsage.sh /home/opc/.oci/config ocid1.tenancy.oc1..xxxxxxxxxxxxxxxxxxxxxxx admin2
+# Example: ./OCILimitsAndUsage.sh /home/opc/.oci/config ocid1.tenancy.oc1..xxxxxxxxxxxxxxxxxxxxxxx ayutenant
 #
 #####################################################################################
 
