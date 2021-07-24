@@ -25,11 +25,11 @@ The following CSV file will be output.
 ```SQL
 DATE,TIME,TENANCY_NAME,REGION_NAME,SERVICE_NAME,AVAILABILITY_DOMAIN,LIMIT_NAME,LIMITS,AVAILABLE,USED
 ：
-20210724,055749,ayutenant,us-ashburn-1,compute,tQtc:US-ASHBURN-AD-1,standard-e3-core-ad-count,600,600,0
-20210724,055749,ayutenant,us-ashburn-1,compute,tQtc:US-ASHBURN-AD-2,standard-e3-core-ad-count,600,600,0
-20210724,055749,ayutenant,us-ashburn-1,compute,tQtc:US-ASHBURN-AD-3,standard-e3-core-ad-count,600,600,0
-20210724,055749,ayutenant,us-ashburn-1,compute,tQtc:US-ASHBURN-AD-1,standard-e3-core-count-reservable,0,0,0
-20210724,055749,ayutenant,us-ashburn-1,compute,tQtc:US-ASHBURN-AD-2,standard-e3-core-count-reservable,0,0,0
-20210724,055749,ayutenant,us-ashburn-1,compute,tQtc:US-ASHBURN-AD-3,standard-e3-core-count-reservable,0,0,0
+20210724,055749,ayutenant,us-ashburn-1,compute,xxxx:US-ASHBURN-AD-1,standard-e3-core-ad-count,600,600,0
+20210724,055749,ayutenant,us-ashburn-1,compute,xxxx:US-ASHBURN-AD-2,standard-e3-core-ad-count,600,600,0
+20210724,055749,ayutenant,us-ashburn-1,compute,xxxx:US-ASHBURN-AD-3,standard-e3-core-ad-count,600,600,0
+20210724,055749,ayutenant,us-ashburn-1,compute,xxxx:US-ASHBURN-AD-1,standard-e3-core-count-reservable,0,0,0
+20210724,055749,ayutenant,us-ashburn-1,compute,xxxx:US-ASHBURN-AD-2,standard-e3-core-count-reservable,0,0,0
+20210724,055749,ayutenant,us-ashburn-1,compute,xxxx:US-ASHBURN-AD-3,standard-e3-core-count-reservable,0,0,0
 ：
 ```
