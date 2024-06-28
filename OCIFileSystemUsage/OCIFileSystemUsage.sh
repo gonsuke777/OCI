@@ -68,7 +68,7 @@ EOF
 
 # Output filesystem information to workfile, xfs or ext4 only, exclude /boot and header.
 Timestamp=$(date -u '+%Y-%m-%dT%H:%M:%SZ')
-df --type=xfs --type=ext4 | grep -Ev " /boot$|^Filesystem" > ${workfile}
+df --type=xfs --type=ext4 | grep -Ev "^Filesystem" > ${workfile}
 if [ $? -eq 0 ]
 then
   echo "no error df."; 
