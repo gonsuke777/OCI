@@ -22,12 +22,12 @@ workfile="${mypath}/filesystemusage_work.txt"
 jsonfile="${mypath}/filesystemusage_work.json"
 
 # OCI env initialize
-compartmentId=$(curl -s -L http://169.254.169.254/opc/v1/instance/ | jq -r '.compartmentId')
+compartmentId=$(curl -s -H "Authorization: Bearer Oracle" -L http://169.254.169.254/opc/v2/instance/ | jq -r '.compartmentId')
 metricNamespace="compute_filesystem_usage"
 metricResourceGroup="compute_filesystem_usage_rg"
-instanceName=$(curl -s -L http://169.254.169.254/opc/v1/instance/ | jq -r '.displayName')
-instanceId=$(curl -s -L http://169.254.169.254/opc/v1/instance/ | jq -r '.id')
-endpointRegion=$(curl -s -L http://169.254.169.254/opc/v1/instance/ | jq -r '.canonicalRegionName')
+instanceName=$(curl -s -H "Authorization: Bearer Oracle" -L http://169.254.169.254/opc/v2/instance/ | jq -r '.displayName')
+instanceId=$(curl -s -H "Authorization: Bearer Oracle" -L http://169.254.169.254/opc/v2/instance/ | jq -r '.id')
+endpointRegion=$(curl -s -H "Authorization: Bearer Oracle" -L http://169.254.169.254/opc/v2/instance/ | jq -r '.canonicalRegionName')
 Timestamp=$(date -u '+%Y-%m-%dT%H:%M:%SZ')
 
 # Upload custom metric function
